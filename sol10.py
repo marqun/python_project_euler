@@ -18,7 +18,7 @@ def is_prime(n: int) -> bool:
     return True
 z=0
 x=1
-while x<1000000:
+while x<2000000:
     y=is_prime(x)
     if y == True: z+=x
     x+=1
