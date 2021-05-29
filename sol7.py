@@ -18,15 +18,15 @@ def prime(x):
 l=0
 x=3
 y=[2]
-number = 4
+number = 10001
 while l<number:
     k=prime(x)
     if k != None:
-        print("k", k)
+        #print("k", k)
         y.append(k)
-        print("y", y)
+        #print("y", y)
         l = len(y)
-        print("l", l)
+        #print("l", l)
     x += 2
 print(number, ": " , y[number-1])
 
