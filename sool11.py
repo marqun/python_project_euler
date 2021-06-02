@@ -38,14 +38,49 @@ for i in range(len(zeros)):
         zeros[i][j] = q[e]
         e+=1
 
-
+sum =1
+max = 0
+max1= 0
+max2=0
+max3=0
 #pion
+for i in range(len(zeros)-3):
+    for j in range(len(zeros[i])):
+        sum = zeros[i][j]*zeros[i+1][j]*zeros[i+2][j]*zeros[i+3][j]
+        print(sum)
+        if sum>max: max = sum
 
-
-
-
+print("max: ", max)
 #poziom
-#skos
+for i in range(len(zeros)):
+    for j in range(len(zeros[i])-3):
+        sum = zeros[i][j]*zeros[i][j+1]*zeros[i][j+2]*zeros[i][j+3]
+        print(zeros[i][j],zeros[i][j+1],zeros[i][j+2],zeros[i][j+3])
+        print(sum)
+        if sum>max1: max1 = sum
+
+#skos1
+for i in range(len(zeros)-3):
+    for j in range(len(zeros[i])-3):
+        sum = zeros[i][j]*zeros[i+1][j+1]*zeros[i+2][j+2]*zeros[i+3][j+3]
+        print(zeros[i][j],zeros[i+1][j+1],zeros[i+2][j+2],zeros[i+3][j+3])
+        print(sum)
+        if sum>max2: max2 = sum
+
+#skos2
+for i in range(len(zeros)-3):
+    for j in range(3,len(zeros[i])):
+        sum = zeros[i][j]*zeros[i+1][j-1]*zeros[i+2][j-2]*zeros[i+3][j-3]
+        print(zeros[i][j],zeros[i+1][j-1],zeros[i+2][j-2],zeros[i+3][j-3])
+        print(sum)
+        if sum>max3: max3 = sum
+
+
+print("max: ", max)
+print("max1: ", max1)
+print("max2: ", max2)
+print("max2: ", max3)
+
 
 y = (time.time() - start_time)
 print("--- %s seconds ---" %y)
