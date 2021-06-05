@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.sool11">
+  <component name="RunManager" selected="Python.sol12">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_project_euler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sool11" />
         <item itemvalue="Python.sol12" />
+        <item itemvalue="Python.sool11" />
         <item itemvalue="Python tests.Doctests in sol11" />
         <item itemvalue="Python.sol10" />
         <item itemvalue="Python tests.Doctest solution" />
@@ -173,26 +173,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="problem 7 update" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="191" key="GridCell.Tab.0.bottom" timestamp="1622659584564">
+    <state width="1899" height="191" key="GridCell.Tab.0.bottom" timestamp="1622872221143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="191" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622659584564" />
-    <state width="1899" height="201" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622289230894" />
-    <state width="1899" height="191" key="GridCell.Tab.0.center" timestamp="1622659584564">
+    <state width="1899" height="191" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1622872221143" />
+    <state width="1899" height="191" key="GridCell.Tab.0.center" timestamp="1622872221143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="191" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622659584564" />
-    <state width="1899" height="201" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622289230894" />
-    <state width="1899" height="191" key="GridCell.Tab.0.left" timestamp="1622659584563">
+    <state width="1899" height="191" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1622872221143" />
+    <state width="1899" height="191" key="GridCell.Tab.0.left" timestamp="1622872221143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="191" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622659584563" />
-    <state width="1899" height="201" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622289230894" />
-    <state width="1899" height="191" key="GridCell.Tab.0.right" timestamp="1622659584564">
+    <state width="1899" height="191" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1622872221143" />
+    <state width="1899" height="191" key="GridCell.Tab.0.right" timestamp="1622872221143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="191" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622659584564" />
-    <state width="1899" height="201" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622289230894" />
+    <state width="1899" height="191" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1622872221143" />
     <state width="1899" height="338" key="GridCell.Tab.1.bottom" timestamp="1622293859728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
