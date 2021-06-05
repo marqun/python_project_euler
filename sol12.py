@@ -11,20 +11,26 @@ Let us list the factors of the first seven triangle numbers:
 28: 1,2,4,7,14,28
 We can see that 28 is the first triangle number to have over five divisors.
 What is the value of the first triangle number to have over five hundred divisors?"""
+from math import sqrt
 check = False
 i = 1
 j = 1
 l=0
+
+def count_it(n):
+    nDivisros = 0
+    for i in range(1, int(sqrt(n))+1):
+        if n % i == 0:
+            nDivisros += 2
+    if sqrt(n) == int(sqrt(n)):
+        nDivisros -=1
+    return nDivisros
+
 while check == False:
-    i += 1
-    j=j+i
-    l=0
-    #print("j:", j, "i", i)
-    for x in range(1,j+1):
-        #print(x)
-        if j%x== 0:
-            l+=1
-            #print("j:", j, "l:", l)
-    if l==50:
-        check= True
-        print("j:", j, "l:", l)
+    i +=1
+    j += i
+    y = count_it(j)
+    print("j:", j, "i", i, "y:", y)
+    if y > 500: check = True
+
+
