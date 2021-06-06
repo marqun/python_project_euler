@@ -16,24 +16,23 @@ x= """75
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23"""
 
+y = np.zeros((g, g))
 
-
-y  = np.zeros((g, g))
-
-
-l=0
-k=0
-while k<g:
-    print("\n-------------\nk:", k)
+l = 0
+k = 0
+while k < g:
+    #print("\n-------------\nk:", k)
     for j in range(0, k+1):
         y[k][j] = int(x[l]+x[l+1])
-        print("k:",k, "j:", j, x[l], x[l+1])
-        l+=3
-    k+=1
+        #print("k:", k , "j:", j, x[l], x[l+1])
+        l += 3
+    k += 1
 
 
-
-
-
-
-print(y)
+while g>0:
+    for i in range(g-1,-1,-1):
+        print(y[i])
+        for j in range(g-1,-1,-1):
+            print(y[i][j])
+    g -= 1
+    print(g)
