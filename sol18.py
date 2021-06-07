@@ -31,7 +31,7 @@ while k < g:
 
 test = True
 max = np.zeros((g,g))
-#petla nie potrzebna,przejscie element po elemencie, kasowanie zuzytego elementu 
+#petla nie potrzebna,przejscie element po elemencie, kasowanie zuzytego elementu
 while test==True:
     print("----------NEXT WHILE----------------")
     for i in range(gg-1,-1,-1):
@@ -47,8 +47,9 @@ while test==True:
                     y[i - 1][j - 1] = y[i - 1][j - 1] + y[i][j]
                     y[i][j] = 0
                     #print("i:", i, "j:", j, "\n-------------", y[i-1], "\n-------------", y[i])
-        print(y)
+        #print(y)
     test = False
-
-print(y)
-
+q=0
+for i in y[0]:
+    if i>q: q=i
+print("max route:", q)
