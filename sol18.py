@@ -29,6 +29,8 @@ while k < g:
         l += 3
     k += 1
 
+print(y[0][0])
+"""
 max = np.zeros((g,g))
 while g>0:
     for i in range(gg-1,-1,-1):
@@ -36,10 +38,17 @@ while g>0:
         for j in range(gg-1,-1,-1):
             if j>=0:
                 print("i:",i , "j" , j, y[i][j])
-                if y[i-1][j]>y[i][j]: max[i-1][j-1] = y[i-1][j]+y[i-1][j-1]
-                else: max[i-1][j-1] = y[i][j]+y[i-1][j-1]
-    g -= 1
-    print(g)
+                if y[i-1][j]>y[i][j]:
+                    y[i-1][j-1] = y[i-1][j-1]+y[i-1][j]
+                    y[i - 1][j] = 0
+                    y[i][j] = 0
+                    print("i:", i, "j:", j, y[i][j])
+                else:
+                    y[i - 1][j - 1] = y[i - 1][j - 1] + y[i][j]
+                    y[i - 1][j] = 0
+                    y[i][j] = 0
+    g -= 1"""
 
-print(max)
+
+
 
