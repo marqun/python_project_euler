@@ -29,26 +29,27 @@ while k < g:
         l += 3
     k += 1
 
-
+test = True
 max = np.zeros((g,g))
-while g>0:
+while test==True:
+    print("----------NEXT WHILE----------------")
     for i in range(gg-1,-1,-1):
-        #print(y[i])
         for j in range(gg-1,-1,-1):
-            if j>=0:
-                print("i:",i , "j" , j, y[i][j])
+            if j>=1 and i>0:
+                #print("i:",i , "j" , j, y[i][j])
                 if y[i][j-1]>y[i][j]:
                     y[i-1][j-1] = y[i-1][j-1]+y[i][j-1]
-                    y[i - 1][j] = 0
+                    y[i][j-1] = 0
                     y[i][j] = 0
-                    print("i:", i, "j:",j, "\n-------------", y[i], "\n-------------", y[i-1])
+                    #print("i:", i, "j:",j, "\n-------------", y[i], "\n-------------", y[i-1])
 
                 else:
                     y[i - 1][j - 1] = y[i - 1][j - 1] + y[i][j]
-                    y[i - 1][j] = 0
+                    y[i][j-1] = 0
                     y[i][j] = 0
-                    print("i:", i, "j:", j, "\n-------------", y[i], "\n-------------", y[i - 1])
-    g -= 1
+                    #print("i:", i, "j:", j, "\n-------------", y[i], "\n-------------", y[i - 1])
+        print(y)
+    test = False
 
 
 
