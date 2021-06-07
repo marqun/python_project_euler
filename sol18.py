@@ -1,6 +1,6 @@
 import numpy as np
 g=15
-gg=g
+gg=15
 x= """75
 95 64
 17 47 82
@@ -29,26 +29,26 @@ while k < g:
         l += 3
     k += 1
 
-print(y[0][0])
-"""
+
 max = np.zeros((g,g))
 while g>0:
     for i in range(gg-1,-1,-1):
-        print(y[i])
+        #print(y[i])
         for j in range(gg-1,-1,-1):
             if j>=0:
                 print("i:",i , "j" , j, y[i][j])
-                if y[i-1][j]>y[i][j]:
-                    y[i-1][j-1] = y[i-1][j-1]+y[i-1][j]
+                if y[i][j-1]>y[i][j]:
+                    y[i-1][j-1] = y[i-1][j-1]+y[i][j-1]
                     y[i - 1][j] = 0
                     y[i][j] = 0
-                    print("i:", i, "j:", j, y[i][j])
+                    print("i:", i, "j:",j, "\n-------------", y[i], "\n-------------", y[i-1])
+
                 else:
                     y[i - 1][j - 1] = y[i - 1][j - 1] + y[i][j]
                     y[i - 1][j] = 0
                     y[i][j] = 0
-    g -= 1"""
-
+                    print("i:", i, "j:", j, "\n-------------", y[i], "\n-------------", y[i - 1])
+    g -= 1
 
 
 
