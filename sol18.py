@@ -1,5 +1,6 @@
 import numpy as np
 g=15
+gg=g
 x= """75
 95 64
 17 47 82
@@ -30,15 +31,15 @@ while k < g:
 
 max = np.zeros((g,g))
 while g>0:
-    for i in range(g-1,-1,-1):
+    for i in range(gg-1,-1,-1):
         print(y[i])
-        for j in range(g-1,-1,-1):
-            if j>0:
-                if y[i][j]+y[i][j-1]>y[i][j]+y[i-1][j-1]: max[i-1][j-1] = y[i][j]+y[i][j-1]
+        for j in range(gg-1,-1,-1):
+            if j>=0:
+                print("i:",i , "j" , j, y[i][j])
+                if y[i-1][j]>y[i][j]: max[i-1][j-1] = y[i-1][j]+y[i-1][j-1]
                 else: max[i-1][j-1] = y[i][j]+y[i-1][j-1]
-                print("max[i-1][j-1]:", max[i-1][j-1], [i-1], [j-1])
     g -= 1
     print(g)
 
-
 print(max)
+
